@@ -5,8 +5,8 @@ const fetch = ({ ...opt }) => {
   const options = {
     baseURL: "https://asos2.p.rapidapi.com",
     headers: {
-      'X-RapidAPI-Host': 'asos2.p.rapidapi.com',
-      'X-RapidAPI-Key': 'fc494e7341msh2ac2252be64c92bp1880d3jsn4a2c9262227e'
+      'X-RapidAPI-Host': process.env.NEXT_PUBLIC_RAPIDAPI_HOST,
+      'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPIDAPI_KEY
     },
     ...opt
   };
