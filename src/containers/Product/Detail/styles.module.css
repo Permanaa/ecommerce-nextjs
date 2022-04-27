@@ -1,0 +1,44 @@
+.root {
+  padding-top: 150px;
+  overflow: hidden;
+}
+
+.backButton {
+  border: 1px solid #000;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 56px;
+  padding: 12px 24px;
+  position: fixed;
+}
+
+.detailWrapper {
+  overflow-y: auto;
+  display: flex;
+  gap: 150px;
+  margin-left: 350px;
+  padding-right: 56px;
+  padding-bottom: 56px;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 36px
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
