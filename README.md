@@ -1,5 +1,5 @@
 # Demo
-[portofolio-ecommerce.vercel.app](https://portofolio-ecommerce.vercel.app/)
+[ecommerce-series.vercel.app](https://ecommerce-series.vercel.app/)
 
 # Installation
 - Clone project
