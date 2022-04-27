@@ -44,7 +44,7 @@ const Landingpage = () => {
         </div>
         <motion.div className={styles.bigTitle} {...fadeUp}>{"Suits"}</motion.div>
         <div>
-          <div style={{ color: "transparent" }} className={styles.smallTitle}>space</div>
+          <div style={{ color: "transparent" }} className={styles.smallTitle}>you got me</div>
           <div className={cx(styles.leftSmallTitle, styles.smallTitle)}>{"You"}</div>
         </div>
       </div>
