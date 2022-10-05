@@ -4,3 +4,15 @@
   align-items: center;
   height: 100vh;
 }
+
+.btnSignOut {
+  border: 1px solid #000;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 56px;
+  padding: 12px 24px;
+}

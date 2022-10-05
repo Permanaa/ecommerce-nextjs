@@ -4,7 +4,12 @@ import styles from "./styles.module.css"
 const Account = () => {
   return (
     <div className={styles.root}>
-      <div onClick={() => signOut()}>Keluar</div>
+      <div
+        className={styles.btnSignOut}
+        onClick={() => signOut()}
+      >
+        Sign out
+      </div>
     </div>
   )
 }
