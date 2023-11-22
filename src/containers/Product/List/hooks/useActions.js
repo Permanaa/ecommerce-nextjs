@@ -38,8 +38,8 @@ const useActions = () => {
   }
 
   useEffect(() => {
-    fetchProductList()
-  }, [tab])
+    if (router.isReady) fetchProductList()
+  }, [tab, router.isReady])
 
   return {
     tab,
