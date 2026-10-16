@@ -27,15 +27,13 @@ const Header = () => {
         )}
         {(session?.user && !loading) && (
           <Link href="/account">
-            <a>
-              <div className={styles.account}>
-                <div className={styles.accountInfo}>
-                  <strong>{session.user.email ?? session.user.name}</strong>
-                  <span>ini kamu</span>
-                </div>
-                <Image src={session.user.image} width={50} height={50} alt="user image" className={styles.accountImage} />
+            <div className={styles.account}>
+              <div className={styles.accountInfo}>
+                <strong>{session.user.email ?? session.user.name}</strong>
+                <span>ini kamu</span>
               </div>
-            </a>
+              <Image src={session.user.image} width={50} height={50} alt="user image" className={styles.accountImage} />
+            </div>
           </Link>
         )}
       </div>

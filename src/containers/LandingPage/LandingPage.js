@@ -50,38 +50,34 @@ const Landingpage = () => {
       </div>
       <div className={styles.buttonWrapper}>
         <Link href="/product/7113">
-          <a>
-            <motion.div
-              className={styles.startButton}
-              onMouseEnter={() => setIsShown("men")}
-              onMouseLeave={() => setIsShown("")}
-              whileTap={{ scale: 0.8 }}
-              exit={{
-                x: -600,
-                transition: { duration: 0.9, delay: 0.1 }
-              }}
-            >
-              {"Men's"}
-              {isShown === "men" && <FiArrowRight />}
-            </motion.div>
-          </a>
+          <motion.div
+            className={styles.startButton}
+            onMouseEnter={() => setIsShown("men")}
+            onMouseLeave={() => setIsShown("")}
+            whileTap={{ scale: 0.8 }}
+            exit={{
+              x: -600,
+              transition: { duration: 0.9, delay: 0.1 }
+            }}
+          >
+            {"Men's"}
+            {isShown === "men" && <FiArrowRight />}
+          </motion.div>
         </Link>
         <Link href="/product/5906">
-          <a>
-            <motion.div
-              className={styles.startButton}
-              onMouseEnter={() => setIsShown("women")}
-              onMouseLeave={() => setIsShown("")}
-              whileTap={{ scale: 0.9 }}
-              exit={{
-                x: -600,
-                transition: { duration: 0.2, delay: 0.3 }
-              }}
-            >
-              {"Women's"}
-              {isShown === "women" && <FiArrowRight />}
-            </motion.div>
-          </a>
+          <motion.div
+            className={styles.startButton}
+            onMouseEnter={() => setIsShown("women")}
+            onMouseLeave={() => setIsShown("")}
+            whileTap={{ scale: 0.9 }}
+            exit={{
+              x: -600,
+              transition: { duration: 0.2, delay: 0.3 }
+            }}
+          >
+            {"Women's"}
+            {isShown === "women" && <FiArrowRight />}
+          </motion.div>
         </Link>
       </div>
     </motion.div>
