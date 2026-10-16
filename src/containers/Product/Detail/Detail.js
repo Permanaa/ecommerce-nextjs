@@ -53,19 +53,21 @@ const Detail = () => {
     </motion.div>
   )
 
+  console.log('haloo', data)
+
   const renderDetail = !loading && (
     <motion.div className={styles.detailWrapper} {...fadeInUp}>
       <div className={styles.imageWrapper}>
-        {data.media.images.map((item, index) => (
+        {data.media?.images?.map((item, index) => (
           <Image src={`https://${item.url}`} width={314} height={400} alt={item.type} key={index} />
         ))}
       </div>
       <div>
         <div className={styles.title}>{data.name}</div>
-        <div className={styles.price}>{data.price.current.text}</div>
-        <div dangerouslySetInnerHTML={{ __html: data.info.aboutMe }} />
+        <div className={styles.price}>{data.price?.current?.text}</div>
+        <div dangerouslySetInnerHTML={{ __html: data.info?.aboutMe }} />
         <div dangerouslySetInnerHTML={{ __html: data.description }} />
-        <div dangerouslySetInnerHTML={{ __html: data.info.sizeAndFit }} />
+        <div dangerouslySetInnerHTML={{ __html: data.info?.sizeAndFit }} />
       </div>
     </motion.div>
   )
